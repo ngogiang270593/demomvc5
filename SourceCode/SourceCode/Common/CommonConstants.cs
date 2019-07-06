@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SourceCode.Common
 {
-    public static class Common
+    public static class CommonConstants
     {
         public static string USER_SESSION = "USER_SESSION";
     }

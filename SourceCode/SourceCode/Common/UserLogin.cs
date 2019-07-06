@@ -9,6 +9,6 @@ namespace SourceCode.Common
     public class UserLogin
     {
         public int UserID { set; get; }
-        public int UserName { set; get; }
+        public string UserName { set; get; }
     }
 }

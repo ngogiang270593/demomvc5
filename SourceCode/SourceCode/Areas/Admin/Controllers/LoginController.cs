@@ -1,11 +1,11 @@
 ﻿using Models.Dao;
 using SourceCode.Areas.Admin.Models;
+using SourceCode.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
 namespace SourceCode.Areas.Admin.Controllers
 {
     public class LoginController : Controller
@@ -22,11 +22,15 @@ namespace SourceCode.Areas.Admin.Controllers
             var result = dao.Login(model.UserName, model.Password);
             if (result)
             {
-
+                var user = dao.GetById(model.UserName);
+                var userSession = new UserLogin();
+                userSession.UserName = user.UserName;
+                userSession.UserID = user.UserId;
+                Session.Add(CommonConstants.USER_SESSION, userSession);
             }
             else
             {
-                ModelState.AddModelError("","Đăng nhập không đúng.")
+                ModelState.AddModelError("", "Đăng nhập không đúng.");
             }
             return View();
         }

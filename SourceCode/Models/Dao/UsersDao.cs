@@ -23,6 +23,11 @@ namespace Models.Dao
 
         }
 
+        public User  GetById(string UserName)
+        {
+            return db.Users.SingleOrDefault(x=>x.UserName == UserName);
+        }
+
         public bool Login (string UserName ,string Password)
         {
             var result = db.Users.Count(x => x.UserName == UserName && x.Password == Password);
