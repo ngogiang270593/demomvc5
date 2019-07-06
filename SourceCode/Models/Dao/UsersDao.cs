@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Models.Dao
 {
-    class UsersDao
+    public class UsersDao
     {
         Demomvc5DbContext db = null;
         public UsersDao()

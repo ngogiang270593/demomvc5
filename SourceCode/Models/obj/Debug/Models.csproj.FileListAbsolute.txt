@@ -1,0 +1,12 @@
+D:\xampp\htdocs\demomvc5\SourceCode\Models\bin\Debug\Models.dll.config
+D:\xampp\htdocs\demomvc5\SourceCode\Models\bin\Debug\Models.dll
+D:\xampp\htdocs\demomvc5\SourceCode\Models\bin\Debug\Models.pdb
+D:\xampp\htdocs\demomvc5\SourceCode\Models\bin\Debug\EntityFramework.dll
+D:\xampp\htdocs\demomvc5\SourceCode\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\xampp\htdocs\demomvc5\SourceCode\Models\bin\Debug\EntityFramework.xml
+D:\xampp\htdocs\demomvc5\SourceCode\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\xampp\htdocs\demomvc5\SourceCode\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\xampp\htdocs\demomvc5\SourceCode\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\xampp\htdocs\demomvc5\SourceCode\Models\obj\Debug\Models.csproj.CopyComplete
+D:\xampp\htdocs\demomvc5\SourceCode\Models\obj\Debug\Models.dll
+D:\xampp\htdocs\demomvc5\SourceCode\Models\obj\Debug\Models.pdb

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Models.Dao;
+using SourceCode.Areas.Admin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +13,21 @@ namespace SourceCode.Areas.Admin.Controllers
         // GET: Admin/Login
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult Login(LoginModel model)
+        {
+            var dao = new UsersDao();
+            var result = dao.Login(model.UserName, model.Password);
+            if (result)
+            {
+
+            }
+            else
+            {
+                ModelState.AddModelError("","Đăng nhập không đúng.")
+            }
             return View();
         }
     }
