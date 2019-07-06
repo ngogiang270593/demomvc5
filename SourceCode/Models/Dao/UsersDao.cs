@@ -22,5 +22,18 @@ namespace Models.Dao
             return entity.UserId;
 
         }
+
+        public bool Login (string UserName ,string Password)
+        {
+            var result = db.Users.Count(x => x.UserName == UserName && x.Password == Password);
+            if(result > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
