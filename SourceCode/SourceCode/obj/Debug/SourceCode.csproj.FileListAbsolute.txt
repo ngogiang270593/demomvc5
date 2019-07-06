@@ -80,3 +80,8 @@ D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\obj\Debug\SourceCode.csproj.CoreC
 D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\obj\Debug\SourceCode.csproj.CopyComplete
 D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\obj\Debug\SourceCode.dll
 D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\obj\Debug\SourceCode.pdb
+D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\Models.dll
+D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\EntityFramework.dll
+D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\Models.pdb
+D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\Models.dll.config
+D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\EntityFramework.xml
