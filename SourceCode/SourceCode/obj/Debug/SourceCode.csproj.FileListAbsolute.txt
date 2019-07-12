@@ -85,3 +85,5 @@ D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\EntityFramework.dll
 D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\Models.pdb
 D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\Models.dll.config
 D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\EntityFramework.xml
+D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\EntityFramework.SqlServer.dll
+D:\xampp\htdocs\demomvc5\SourceCode\SourceCode\bin\EntityFramework.SqlServer.xml

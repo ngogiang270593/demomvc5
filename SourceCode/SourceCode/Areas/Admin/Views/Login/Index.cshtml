@@ -2,7 +2,7 @@
 @{
     Layout = null;
 }
-
+@model  SourceCode.Areas.Admin.Models.LoginModel
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +11,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta name="description" content="Responsive Admin Template" />
     <meta name="author" content="SmartUniversity" />
-    <title>ECab - Taxi Admin Bootstrap 4 Material Design Dashboard Template</title>
+    <title>Demmo MVC5</title>
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
     <!-- icons -->
@@ -28,7 +28,9 @@
     <div class="limiter">
         <div class="container-login100 page-background">
             <div class="wrap-login100">
-                <form class="login100-form validate-form">
+                @*<form class="login100-form validate-form">*@
+                @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { @id = "Login", @enctype = "multipart/form-data", @class = "login100-form validate-form" }))
+                {
                     <span class="login100-form-logo">
                         <img alt="" src="/Assets/admin/img/taxi.png">
                     </span>
@@ -36,30 +38,34 @@
                         Log in
                     </span>
                     <div class="wrap-input100 validate-input" data-validate="Enter username">
-                        <input class="input100" type="text" name="username" placeholder="Username">
+                        @*<input class="input100" type="text" name="username" placeholder="Username">*@
+                        @Html.TextBoxFor(model => model.UserName, new { @id = "UserName", @name = "UserName", @class = "input100", @placeholder = "Username" })
                         <span class="focus-input100" data-placeholder="&#xf207;"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Enter password">
-                        <input class="input100" type="password" name="pass" placeholder="Password">
+                        @*<input class="input100" type="password" name="pass" placeholder="Password">*@
+                        @Html.PasswordFor(model => model.Password, new { @id = "Password", @name = "Password", @class = "input100", @placeholder = "Password" })
                         <span class="focus-input100" data-placeholder="&#xf191;"></span>
                     </div>
                     <div class="contact100-form-checkbox">
-                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                        @*<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">*@
+                        @Html.CheckBoxFor(model => model.Remember, new { @id = "Remember", @name = "Remember", @class = "input-checkbox100" })
                         <label class="label-checkbox100" for="ckb1">
                             Remember me
                         </label>
                     </div>
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
+                        <button type="submit" class="login100-form-btn">
                             Login
                         </button>
                     </div>
-                    <div class="text-center p-t-50">
+                    @*<div class="text-center p-t-50">
                         <a class="txt1" href="forgot_password.html">
                             Forgot Password?
                         </a>
-                    </div>
-                </form>
+                    </div>*@
+                }
+                @*</form>*@
             </div>
         </div>
     </div>
