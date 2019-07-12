@@ -23,7 +23,7 @@ namespace SourceCode.Areas.Admin.Controllers
         public ActionResult Index(LoginModel model)
         {
             var dao = new UsersDao();
-            string Password = EncodePassword(model.Password);
+            string Password = Encryptor.MD5Hash(model.Password);
             var result = dao.Login(model.UserName, Password);
             if (result)
             {
@@ -39,22 +39,6 @@ namespace SourceCode.Areas.Admin.Controllers
                 ModelState.AddModelError("", "Đăng nhập không đúng.");
             }
             return View();
-        }
-
-        public static string EncodePassword(string originalPassword)
-        {
-            //Declarations
-            Byte[] originalBytes;
-            Byte[] encodedBytes;
-            System.Security.Cryptography.MD5 md5;
-
-            //Instantiate MD5CryptoServiceProvider, get bytes for original password and compute hash (encoded password)
-            md5 = new MD5CryptoServiceProvider();
-            originalBytes = ASCIIEncoding.Default.GetBytes(originalPassword);
-            encodedBytes = md5.ComputeHash(originalBytes);
-
-            //Convert encoded bytes back to a 'readable' string
-            return BitConverter.ToString(encodedBytes).Replace("-", "");
         }
     }
 }
